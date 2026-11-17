@@ -1,0 +1,5 @@
+# Optional NLP / deep-learning layer for the Cost Quest product intelligence engine.
+# Install after requirements.txt. The first inference may download model weights.
+sentence-transformers[image,train]>=5.0,<6.0
+scikit-learn>=1.5,<2.0
+Pillow>=10.0,<13.0

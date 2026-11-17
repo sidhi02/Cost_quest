@@ -1,0 +1,429 @@
+[
+  {
+    "domain": "fashion",
+    "category": "fashion-clothing",
+    "query": "Zara women's cotton shirt size M",
+    "positive": "Zara Women's Cotton Shirt Size M",
+    "negative": "Zara Women's Cotton Shirt Size L"
+  },
+  {
+    "domain": "fashion",
+    "category": "fashion-footwear",
+    "query": "Nike men's running shoes UK 8",
+    "positive": "Nike Men's Revolution 6 Running Shoes UK 8",
+    "negative": "Nike Men's Revolution 6 Running Shoes UK 9"
+  },
+  {
+    "domain": "fashion",
+    "category": "fashion-bags",
+    "query": "American Tourister 55cm cabin suitcase",
+    "positive": "American Tourister 55cm cabin suitcase",
+    "negative": "American Tourister 75cm large suitcase"
+  },
+  {
+    "domain": "fashion",
+    "category": "fashion-watches",
+    "query": "Casio analog wrist watch",
+    "positive": "Casio analog wrist watch",
+    "negative": "Casio digital wrist watch"
+  },
+  {
+    "domain": "fashion",
+    "category": "fashion-eyewear",
+    "query": "Ray-Ban polarized sunglasses",
+    "positive": "Ray-Ban polarized sunglasses",
+    "negative": "Ray-Ban eyeglasses optical frame"
+  },
+  {
+    "domain": "fashion",
+    "category": "fashion-jewellery",
+    "query": "silver ring size 7",
+    "positive": "Silver ring size 7",
+    "negative": "Silver ring size 8"
+  },
+  {
+    "domain": "fashion",
+    "category": "fashion-beauty",
+    "query": "Nivea moisturizer 100ml",
+    "positive": "Nivea moisturizer 100ml",
+    "negative": "Nivea moisturizer 200ml"
+  },
+  {
+    "domain": "home_appliances",
+    "category": "appliances-refrigerators",
+    "query": "LG 260 litre frost free refrigerator",
+    "positive": "LG 260 litre frost free refrigerator",
+    "negative": "LG 300 litre frost free refrigerator"
+  },
+  {
+    "domain": "home_appliances",
+    "category": "appliances-washing-machines",
+    "query": "Samsung 8kg front load washing machine",
+    "positive": "Samsung 8kg front load washing machine",
+    "negative": "Samsung 9kg front load washing machine"
+  },
+  {
+    "domain": "home_appliances",
+    "category": "appliances-air-conditioners",
+    "query": "Daikin 1.5 ton 5 star inverter split AC",
+    "positive": "Daikin 1.5 ton 5 star inverter split AC",
+    "negative": "Daikin 2 ton 5 star inverter split AC"
+  },
+  {
+    "domain": "home_appliances",
+    "category": "appliances-microwaves-ovens",
+    "query": "IFB 30 litre convection microwave oven",
+    "positive": "IFB 30 litre convection microwave oven",
+    "negative": "IFB 23 litre convection microwave oven"
+  },
+  {
+    "domain": "home_appliances",
+    "category": "appliances-dishwashers",
+    "query": "Bosch 13 place setting dishwasher",
+    "positive": "Bosch 13 place setting dishwasher",
+    "negative": "Bosch 14 place setting dishwasher"
+  },
+  {
+    "domain": "home_appliances",
+    "category": "appliances-vacuum-cleaners",
+    "query": "Dyson V8 cordless vacuum cleaner",
+    "positive": "Dyson V8 cordless vacuum cleaner",
+    "negative": "Dyson V8 replacement filter"
+  },
+  {
+    "domain": "home_appliances",
+    "category": "appliances-kitchen",
+    "query": "Prestige 5 litre air fryer",
+    "positive": "Prestige 5 litre air fryer",
+    "negative": "Prestige 3 litre air fryer"
+  },
+  {
+    "domain": "home_appliances",
+    "category": "appliances-water-purifiers",
+    "query": "Kent RO 8 litre water purifier",
+    "positive": "Kent RO 8 litre water purifier",
+    "negative": "Kent RO replacement filter"
+  },
+  {
+    "domain": "home_appliances",
+    "category": "appliances-water-heaters",
+    "query": "Havells 15 litre water heater geyser",
+    "positive": "Havells 15 litre water heater geyser",
+    "negative": "Havells 25 litre water heater geyser"
+  },
+  {
+    "domain": "home_appliances",
+    "category": "appliances-air-purifiers",
+    "query": "Philips AC1711 air purifier",
+    "positive": "Philips AC1711 air purifier",
+    "negative": "Philips air purifier replacement filter"
+  },
+  {
+    "domain": "books_stationery",
+    "category": "books-textbooks",
+    "query": "Engineering Mathematics textbook 5th edition paperback",
+    "positive": "Engineering Mathematics textbook 5th edition paperback",
+    "negative": "Engineering Mathematics textbook 4th edition paperback"
+  },
+  {
+    "domain": "books_stationery",
+    "category": "books-exam-prep",
+    "query": "Arihant JEE Main previous year question bank",
+    "positive": "Arihant JEE Main previous year question bank",
+    "negative": "Arihant NEET previous year question bank"
+  },
+  {
+    "domain": "books_stationery",
+    "category": "books-fiction",
+    "query": "Penguin The Alchemist paperback",
+    "positive": "Penguin The Alchemist paperback",
+    "negative": "Penguin The Alchemist audiobook"
+  },
+  {
+    "domain": "books_stationery",
+    "category": "books-reference",
+    "query": "Oxford English dictionary hardcover",
+    "positive": "Oxford English dictionary hardcover",
+    "negative": "Oxford English dictionary paperback"
+  },
+  {
+    "domain": "books_stationery",
+    "category": "stationery-notebooks",
+    "query": "Classmate 200 page ruled notebook pack of 5",
+    "positive": "Classmate 200 page ruled notebook pack of 5",
+    "negative": "Classmate 200 page ruled notebook pack of 10"
+  },
+  {
+    "domain": "books_stationery",
+    "category": "stationery-writing",
+    "query": "Parker Vector blue ink ball pen pack of 2",
+    "positive": "Parker Vector blue ink ball pen pack of 2",
+    "negative": "Parker Vector blue ink fountain pen pack of 2"
+  },
+  {
+    "domain": "books_stationery",
+    "category": "stationery-art",
+    "query": "Faber Castell colour pencil set 24 pieces",
+    "positive": "Faber Castell colour pencil set 24 pieces",
+    "negative": "Faber Castell colour pencil set 12 pieces"
+  },
+  {
+    "domain": "books_stationery",
+    "category": "stationery-office",
+    "query": "Casio scientific calculator FX-991EX",
+    "positive": "Casio scientific calculator FX-991EX",
+    "negative": "Casio basic calculator MJ-12"
+  },
+  {
+    "domain": "sports_fitness",
+    "category": "sports-gym-equipment",
+    "query": "5kg cast iron dumbbell",
+    "positive": "5kg cast iron dumbbell",
+    "negative": "10kg cast iron dumbbell"
+  },
+  {
+    "domain": "sports_fitness",
+    "category": "sports-footwear",
+    "query": "Nike running shoes UK 8",
+    "positive": "Nike running shoes UK 8",
+    "negative": "Nike running shoes UK 9"
+  },
+  {
+    "domain": "sports_fitness",
+    "category": "sports-cycling",
+    "query": "Hero mountain bicycle 21 speed",
+    "positive": "Hero mountain bicycle 21 speed",
+    "negative": "Hero road bicycle 18 speed"
+  },
+  {
+    "domain": "sports_fitness",
+    "category": "sports-yoga",
+    "query": "Decathlon yoga mat 6mm",
+    "positive": "Decathlon yoga mat 6mm",
+    "negative": "Decathlon yoga mat 10mm"
+  },
+  {
+    "domain": "sports_fitness",
+    "category": "sports-cricket",
+    "query": "SG cricket bat size SH English willow",
+    "positive": "SG cricket bat size SH English willow",
+    "negative": "SG cricket ball leather red"
+  },
+  {
+    "domain": "sports_fitness",
+    "category": "sports-badminton",
+    "query": "Yonex badminton racket graphite",
+    "positive": "Yonex badminton racket graphite",
+    "negative": "Yonex nylon shuttlecock"
+  },
+  {
+    "domain": "sports_fitness",
+    "category": "sports-football",
+    "query": "Nivia football size 5",
+    "positive": "Nivia football size 5",
+    "negative": "Nivia football size 4"
+  },
+  {
+    "domain": "sports_fitness",
+    "category": "sports-protection",
+    "query": "Decathlon boxing gloves 12oz",
+    "positive": "Decathlon boxing gloves 12oz",
+    "negative": "Decathlon boxing gloves 16oz"
+  },
+  {
+    "domain": "furniture_home",
+    "category": "home-sofas-seating",
+    "query": "Wakefit 3 seater fabric sofa",
+    "positive": "Wakefit 3 seater fabric sofa",
+    "negative": "Wakefit 2 seater fabric sofa"
+  },
+  {
+    "domain": "furniture_home",
+    "category": "home-beds",
+    "query": "Godrej queen size bed frame solid wood",
+    "positive": "Godrej queen size bed frame solid wood",
+    "negative": "Godrej king size bed frame solid wood"
+  },
+  {
+    "domain": "furniture_home",
+    "category": "home-mattresses",
+    "query": "Wakefit queen size memory foam mattress",
+    "positive": "Wakefit queen size memory foam mattress",
+    "negative": "Wakefit king size memory foam mattress"
+  },
+  {
+    "domain": "furniture_home",
+    "category": "home-dining",
+    "query": "IKEA 6 seater solid wood dining table",
+    "positive": "IKEA 6 seater solid wood dining table",
+    "negative": "IKEA 4 seater solid wood dining table"
+  },
+  {
+    "domain": "furniture_home",
+    "category": "home-office-furniture",
+    "query": "Green Soul ergonomic office chair",
+    "positive": "Green Soul ergonomic office chair",
+    "negative": "Green Soul study table"
+  },
+  {
+    "domain": "furniture_home",
+    "category": "home-storage",
+    "query": "Godrej 3 door wardrobe engineered wood",
+    "positive": "Godrej 3 door wardrobe engineered wood",
+    "negative": "Godrej 2 door wardrobe engineered wood"
+  },
+  {
+    "domain": "furniture_home",
+    "category": "home-lighting",
+    "query": "Philips LED ceiling light 24W",
+    "positive": "Philips LED ceiling light 24W",
+    "negative": "Philips LED table lamp 24W"
+  },
+  {
+    "domain": "furniture_home",
+    "category": "home-decor",
+    "query": "D'Decor cotton bedsheet queen size",
+    "positive": "D'Decor cotton bedsheet queen size",
+    "negative": "D'Decor cotton bedsheet king size"
+  },
+  {
+    "domain": "electronics",
+    "category": "phones",
+    "query": "Samsung Galaxy S26 256GB",
+    "positive": "Samsung Galaxy S26 256GB",
+    "negative": "Samsung Galaxy S26 phone case"
+  },
+  {
+    "domain": "electronics",
+    "category": "laptops",
+    "query": "Dell XPS 13 laptop",
+    "positive": "Dell XPS 13 laptop 16GB",
+    "negative": "Dell 27 inch monitor"
+  },
+  {
+    "domain": "electronics",
+    "category": "tablets",
+    "query": "iPad Air M3 11 inch tablet",
+    "positive": "Apple iPad Air M3 11 inch Wi-Fi tablet",
+    "negative": "Apple MacBook Air M3"
+  },
+  {
+    "domain": "electronics",
+    "category": "monitors",
+    "query": "Samsung 27 inch 144Hz monitor",
+    "positive": "Samsung 27 inch 144Hz gaming monitor",
+    "negative": "Samsung 55 inch OLED TV"
+  },
+  {
+    "domain": "electronics",
+    "category": "audio",
+    "query": "Sony WH-1000XM5 headphones",
+    "positive": "Sony WH-1000XM5 wireless headphones",
+    "negative": "Sony WH-1000XM5 ear pads"
+  },
+  {
+    "domain": "electronics",
+    "category": "chargers-cables",
+    "query": "Samsung 45W USB-C charger",
+    "positive": "Samsung 45W USB-C wall charger",
+    "negative": "Samsung USB-C cable"
+  },
+  {
+    "domain": "electronics",
+    "category": "components",
+    "query": "NVIDIA RTX 5070 graphics card",
+    "positive": "MSI NVIDIA RTX 5070 12GB graphics card",
+    "negative": "MSI NVIDIA RTX 5060 12GB graphics card"
+  },
+  {
+    "domain": "electronics",
+    "category": "storage",
+    "query": "WD 1TB external hard drive",
+    "positive": "WD 1TB external hard drive portable",
+    "negative": "WD 1TB internal SSD"
+  },
+  {
+    "domain": "electronics",
+    "category": "tv",
+    "query": "Samsung 55 inch OLED TV",
+    "positive": "Samsung 55 inch OLED Smart TV",
+    "negative": "Samsung Galaxy S25 phone"
+  },
+  {
+    "domain": "electronics",
+    "category": "cameras",
+    "query": "Canon mirrorless camera",
+    "positive": "Canon EOS R50 mirrorless camera",
+    "negative": "Canon LaserJet printer"
+  },
+  {
+    "domain": "electronics",
+    "category": "wearables",
+    "query": "Apple Watch Series 10 smartwatch",
+    "positive": "Apple Watch Series 10 GPS smartwatch",
+    "negative": "Apple Watch Series 10 strap"
+  },
+  {
+    "domain": "electronics",
+    "category": "gaming",
+    "query": "PlayStation 5 Slim Disc Edition",
+    "positive": "Sony PlayStation 5 Slim Disc Edition Console",
+    "negative": "Sony PlayStation 5 Slim Digital Edition"
+  },
+  {
+    "domain": "electronics",
+    "category": "printers",
+    "query": "HP LaserJet printer",
+    "positive": "HP LaserJet Pro printer",
+    "negative": "HP LaserJet toner cartridge"
+  },
+  {
+    "domain": "electronics",
+    "category": "networking",
+    "query": "TP-Link Archer AX55 router",
+    "positive": "TP-Link Archer AX55 AX3000 Wi-Fi 6 router",
+    "negative": "TP-Link Archer AX50 router"
+  },
+  {
+    "domain": "electronics",
+    "category": "peripherals",
+    "query": "Logitech wireless mouse",
+    "positive": "Logitech MX Master 3S wireless mouse",
+    "negative": "Logitech wireless keyboard"
+  },
+  {
+    "domain": "electronics",
+    "category": "ups-power",
+    "query": "APC 1100VA UPS",
+    "positive": "APC 1100VA UPS power backup",
+    "negative": "APC 1500VA UPS power backup"
+  },
+  {
+    "domain": "electronics",
+    "category": "smart-home",
+    "query": "Philips Hue smart bulb",
+    "positive": "Philips Hue smart bulb E27",
+    "negative": "Philips CCTV security camera"
+  },
+  {
+    "domain": "electronics",
+    "category": "appliances",
+    "query": "Philips electric shaver",
+    "positive": "Philips electric shaver trimmer",
+    "negative": "Philips replacement shaver blades"
+  },
+  {
+    "domain": "electronics",
+    "category": "wearable-accessories",
+    "query": "Apple Watch sport band",
+    "positive": "Apple Watch sport band 42mm",
+    "negative": "Apple Watch Series 10 smartwatch"
+  },
+  {
+    "domain": "electronics",
+    "category": "phone-accessories",
+    "query": "Samsung Galaxy S26 phone case",
+    "positive": "Samsung Galaxy S26 protective phone case",
+    "negative": "Samsung Galaxy S26 256GB smartphone"
+  }
+]

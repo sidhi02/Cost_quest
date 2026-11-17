@@ -1,0 +1,128 @@
+{
+  "model": "TF-IDF character ngrams + logistic regression",
+  "evaluation": "Held-out category groups from curated search ideas (offline only)",
+  "examples": 125,
+  "training_examples": 92,
+  "evaluation_examples": 33,
+  "training_categories": 45,
+  "evaluation_categories": 16,
+  "domains": [
+    "books_stationery",
+    "electronics",
+    "fashion",
+    "furniture_home",
+    "home_appliances",
+    "sports_fitness"
+  ],
+  "evaluation_domain_counts": {
+    "electronics": 9,
+    "fashion": 4,
+    "home_appliances": 6,
+    "books_stationery": 4,
+    "sports_fitness": 6,
+    "furniture_home": 4
+  },
+  "accuracy": 0.5758,
+  "classification_report": {
+    "books_stationery": {
+      "precision": 0.5,
+      "recall": 0.75,
+      "f1-score": 0.6,
+      "support": 4.0
+    },
+    "electronics": {
+      "precision": 0.5384615384615384,
+      "recall": 0.7777777777777778,
+      "f1-score": 0.6363636363636364,
+      "support": 9.0
+    },
+    "fashion": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 4.0
+    },
+    "furniture_home": {
+      "precision": 0.75,
+      "recall": 0.75,
+      "f1-score": 0.75,
+      "support": 4.0
+    },
+    "home_appliances": {
+      "precision": 0.8,
+      "recall": 0.6666666666666666,
+      "f1-score": 0.7272727272727273,
+      "support": 6.0
+    },
+    "sports_fitness": {
+      "precision": 1.0,
+      "recall": 0.3333333333333333,
+      "f1-score": 0.5,
+      "support": 6.0
+    },
+    "accuracy": 0.5757575757575758,
+    "macro avg": {
+      "precision": 0.5980769230769231,
+      "recall": 0.5462962962962963,
+      "f1-score": 0.5356060606060606,
+      "support": 33.0
+    },
+    "weighted avg": {
+      "precision": 0.6256410256410256,
+      "recall": 0.5757575757575758,
+      "f1-score": 0.5603305785123968,
+      "support": 33.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      3,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      7,
+      0,
+      0,
+      1,
+      0
+    ],
+    [
+      1,
+      2,
+      0,
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      0,
+      3,
+      0,
+      0
+    ],
+    [
+      0,
+      2,
+      0,
+      0,
+      4,
+      0
+    ],
+    [
+      1,
+      0,
+      3,
+      0,
+      0,
+      2
+    ]
+  ],
+  "scope_warning": "Small curated search-idea set. Not representative of live retailer products, end-to-end matching, or production accuracy."
+}

@@ -1,0 +1,1 @@
+Place the trained `siamese_head.pt` checkpoint here by running `python scripts/train_siamese_matcher.py`. The checkpoint is intentionally not bundled before labelled product pairs have been reviewed and evaluated. Local checkpoints and metrics are ignored by Git.

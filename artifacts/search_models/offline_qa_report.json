@@ -1,0 +1,81 @@
+{
+  "type": "Offline synthetic fixture and in-catalogue smoke evaluation",
+  "fixtures": 61,
+  "across_domains": [
+    "electronics",
+    "fashion",
+    "home_appliances",
+    "books_stationery",
+    "sports_fitness",
+    "furniture_home"
+  ],
+  "category_coverage": {
+    "electronics": 20,
+    "fashion": 7,
+    "home_appliances": 10,
+    "books_stationery": 8,
+    "sports_fitness": 8,
+    "furniture_home": 8
+  },
+  "suggestion_corpus_by_domain": {
+    "electronics": 43,
+    "fashion": 14,
+    "home_appliances": 20,
+    "books_stationery": 16,
+    "sports_fitness": 16,
+    "furniture_home": 16
+  },
+  "classification": {
+    "tp": 61,
+    "fp": 0,
+    "fn": 0,
+    "tn": 61,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0
+  },
+  "by_domain": {
+    "electronics": {
+      "tp": 20,
+      "fn": 0,
+      "fp": 0,
+      "tn": 20
+    },
+    "fashion": {
+      "tp": 7,
+      "fn": 0,
+      "fp": 0,
+      "tn": 7
+    },
+    "home_appliances": {
+      "tp": 10,
+      "fn": 0,
+      "fp": 0,
+      "tn": 10
+    },
+    "books_stationery": {
+      "tp": 8,
+      "fn": 0,
+      "fp": 0,
+      "tn": 8
+    },
+    "sports_fitness": {
+      "tp": 8,
+      "fn": 0,
+      "fp": 0,
+      "tn": 8
+    },
+    "furniture_home": {
+      "tp": 8,
+      "fn": 0,
+      "fp": 0,
+      "tn": 8
+    }
+  },
+  "autocomplete_prefix_smoke": {
+    "total": 125,
+    "top_6_prefix_hits": 125
+  },
+  "failures": [],
+  "limitations": "These 61 labelled fixtures are regression examples, NOT retailer-independent benchmark data. Prefix smoke uses catalogue items that are in the TF-IDF corpus. No live API or price correctness was tested."
+}

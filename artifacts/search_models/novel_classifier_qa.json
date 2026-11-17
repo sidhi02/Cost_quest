@@ -1,0 +1,22 @@
+{
+  "notes": "36 new hand-written queries, NOT independent retailer data; model was refit on 125 curated examples only",
+  "accuracy": 0.9167,
+  "cases": 36,
+  "errors": [
+    {
+      "query": "Allen Solly Cotton Shirt Size L",
+      "expected": "fashion",
+      "predicted": "furniture_home"
+    },
+    {
+      "query": "Oxford English Dictionary 3rd Edition",
+      "expected": "books_stationery",
+      "predicted": "electronics"
+    },
+    {
+      "query": "Cosco Tennis Balls Pack of 3",
+      "expected": "sports_fitness",
+      "predicted": "books_stationery"
+    }
+  ]
+}

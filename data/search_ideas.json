@@ -1,0 +1,627 @@
+[
+  {
+    "title": "Apple iPhone 16 128GB",
+    "category": "phones",
+    "domain": "electronics"
+  },
+  {
+    "title": "Samsung Galaxy S25 256GB",
+    "category": "phones",
+    "domain": "electronics"
+  },
+  {
+    "title": "OnePlus 13R 256GB",
+    "category": "phones",
+    "domain": "electronics"
+  },
+  {
+    "title": "Apple MacBook Air M4 16GB 256GB",
+    "category": "laptops",
+    "domain": "electronics"
+  },
+  {
+    "title": "HP Victus 15 RTX 4050",
+    "category": "laptops",
+    "domain": "electronics"
+  },
+  {
+    "title": "Lenovo IdeaPad Slim 3 i5",
+    "category": "laptops",
+    "domain": "electronics"
+  },
+  {
+    "title": "Apple iPad Air M3 11 inch",
+    "category": "tablets",
+    "domain": "electronics"
+  },
+  {
+    "title": "Samsung Galaxy Tab S10 FE 128GB",
+    "category": "tablets",
+    "domain": "electronics"
+  },
+  {
+    "title": "LG 27 inch 144Hz gaming monitor",
+    "category": "monitors",
+    "domain": "electronics"
+  },
+  {
+    "title": "Samsung 32 inch curved monitor",
+    "category": "monitors",
+    "domain": "electronics"
+  },
+  {
+    "title": "Sony WH-1000XM5 headphones",
+    "category": "audio",
+    "domain": "electronics"
+  },
+  {
+    "title": "JBL Tune 770NC headphones",
+    "category": "audio",
+    "domain": "electronics"
+  },
+  {
+    "title": "Apple AirPods Pro 2 USB-C",
+    "category": "audio",
+    "domain": "electronics"
+  },
+  {
+    "title": "Samsung 45W USB C charger",
+    "category": "chargers-cables",
+    "domain": "electronics"
+  },
+  {
+    "title": "Anker 10000mAh power bank",
+    "category": "chargers-cables",
+    "domain": "electronics"
+  },
+  {
+    "title": "NVIDIA RTX 5070 graphics card",
+    "category": "components",
+    "domain": "electronics"
+  },
+  {
+    "title": "AMD Ryzen 7 7700 CPU",
+    "category": "components",
+    "domain": "electronics"
+  },
+  {
+    "title": "Samsung T7 1TB external SSD",
+    "category": "storage",
+    "domain": "electronics"
+  },
+  {
+    "title": "WD 2TB external hard drive",
+    "category": "storage",
+    "domain": "electronics"
+  },
+  {
+    "title": "Samsung 55 inch OLED TV",
+    "category": "tv",
+    "domain": "electronics"
+  },
+  {
+    "title": "LG 43 inch 4K smart TV",
+    "category": "tv",
+    "domain": "electronics"
+  },
+  {
+    "title": "Canon EOS R50 mirrorless camera",
+    "category": "cameras",
+    "domain": "electronics"
+  },
+  {
+    "title": "Nikon Z50 mirrorless camera",
+    "category": "cameras",
+    "domain": "electronics"
+  },
+  {
+    "title": "Apple Watch Series 10",
+    "category": "wearables",
+    "domain": "electronics"
+  },
+  {
+    "title": "Samsung Galaxy Watch 7",
+    "category": "wearables",
+    "domain": "electronics"
+  },
+  {
+    "title": "PlayStation 5 Slim Disc Edition",
+    "category": "gaming",
+    "domain": "electronics"
+  },
+  {
+    "title": "Nintendo Switch OLED",
+    "category": "gaming",
+    "domain": "electronics"
+  },
+  {
+    "title": "HP LaserJet M110w printer",
+    "category": "printers",
+    "domain": "electronics"
+  },
+  {
+    "title": "Canon PIXMA inkjet printer",
+    "category": "printers",
+    "domain": "electronics"
+  },
+  {
+    "title": "TP Link Archer AX55 router",
+    "category": "networking",
+    "domain": "electronics"
+  },
+  {
+    "title": "Netgear WiFi 6 mesh router",
+    "category": "networking",
+    "domain": "electronics"
+  },
+  {
+    "title": "Logitech MX Master 3S mouse",
+    "category": "peripherals",
+    "domain": "electronics"
+  },
+  {
+    "title": "Logitech K380 keyboard",
+    "category": "peripherals",
+    "domain": "electronics"
+  },
+  {
+    "title": "APC 1100VA UPS",
+    "category": "ups-power",
+    "domain": "electronics"
+  },
+  {
+    "title": "Microtek 1000VA UPS",
+    "category": "ups-power",
+    "domain": "electronics"
+  },
+  {
+    "title": "Philips Hue smart bulb",
+    "category": "smart-home",
+    "domain": "electronics"
+  },
+  {
+    "title": "TP Link Tapo indoor camera",
+    "category": "smart-home",
+    "domain": "electronics"
+  },
+  {
+    "title": "Philips electric shaver",
+    "category": "appliances",
+    "domain": "electronics"
+  },
+  {
+    "title": "Panasonic hair dryer",
+    "category": "appliances",
+    "domain": "electronics"
+  },
+  {
+    "title": "Apple Watch sport band 42mm",
+    "category": "wearable-accessories",
+    "domain": "electronics"
+  },
+  {
+    "title": "Samsung Galaxy Watch strap",
+    "category": "wearable-accessories",
+    "domain": "electronics"
+  },
+  {
+    "title": "iPhone 16 silicone case",
+    "category": "phone-accessories",
+    "domain": "electronics"
+  },
+  {
+    "title": "Samsung Galaxy S25 screen protector",
+    "category": "phone-accessories",
+    "domain": "electronics"
+  },
+  {
+    "title": "Levis 511 slim fit jeans",
+    "category": "fashion-clothing",
+    "domain": "fashion"
+  },
+  {
+    "title": "Van Heusen cotton formal shirt",
+    "category": "fashion-clothing",
+    "domain": "fashion"
+  },
+  {
+    "title": "Nike Air Force 1 White UK 8",
+    "category": "fashion-footwear",
+    "domain": "fashion"
+  },
+  {
+    "title": "Adidas Ultraboost 5 UK 9",
+    "category": "fashion-footwear",
+    "domain": "fashion"
+  },
+  {
+    "title": "American Tourister 55cm cabin suitcase",
+    "category": "fashion-bags",
+    "domain": "fashion"
+  },
+  {
+    "title": "Skybags 30L backpack",
+    "category": "fashion-bags",
+    "domain": "fashion"
+  },
+  {
+    "title": "Casio G Shock digital watch",
+    "category": "fashion-watches",
+    "domain": "fashion"
+  },
+  {
+    "title": "Fastrack analog watch",
+    "category": "fashion-watches",
+    "domain": "fashion"
+  },
+  {
+    "title": "Ray Ban Wayfarer sunglasses",
+    "category": "fashion-eyewear",
+    "domain": "fashion"
+  },
+  {
+    "title": "Titan round eyeglass frames",
+    "category": "fashion-eyewear",
+    "domain": "fashion"
+  },
+  {
+    "title": "925 sterling silver earrings",
+    "category": "fashion-jewellery",
+    "domain": "fashion"
+  },
+  {
+    "title": "Titan rose gold bracelet",
+    "category": "fashion-jewellery",
+    "domain": "fashion"
+  },
+  {
+    "title": "Maybelline Fit Me foundation",
+    "category": "fashion-beauty",
+    "domain": "fashion"
+  },
+  {
+    "title": "Cetaphil gentle skin cleanser",
+    "category": "fashion-beauty",
+    "domain": "fashion"
+  },
+  {
+    "title": "Samsung 253L double door refrigerator",
+    "category": "appliances-refrigerators",
+    "domain": "home_appliances"
+  },
+  {
+    "title": "LG 260L frost free refrigerator",
+    "category": "appliances-refrigerators",
+    "domain": "home_appliances"
+  },
+  {
+    "title": "LG 8kg front load washing machine",
+    "category": "appliances-washing-machines",
+    "domain": "home_appliances"
+  },
+  {
+    "title": "Samsung 7kg top load washing machine",
+    "category": "appliances-washing-machines",
+    "domain": "home_appliances"
+  },
+  {
+    "title": "Daikin 1.5 ton inverter AC",
+    "category": "appliances-air-conditioners",
+    "domain": "home_appliances"
+  },
+  {
+    "title": "LG 1 ton split AC",
+    "category": "appliances-air-conditioners",
+    "domain": "home_appliances"
+  },
+  {
+    "title": "IFB 30L convection microwave",
+    "category": "appliances-microwaves-ovens",
+    "domain": "home_appliances"
+  },
+  {
+    "title": "Samsung 28L convection oven",
+    "category": "appliances-microwaves-ovens",
+    "domain": "home_appliances"
+  },
+  {
+    "title": "Bosch 13 place dishwasher",
+    "category": "appliances-dishwashers",
+    "domain": "home_appliances"
+  },
+  {
+    "title": "IFB 12 place dishwasher",
+    "category": "appliances-dishwashers",
+    "domain": "home_appliances"
+  },
+  {
+    "title": "Dyson V8 vacuum cleaner",
+    "category": "appliances-vacuum-cleaners",
+    "domain": "home_appliances"
+  },
+  {
+    "title": "Eureka Forbes vacuum cleaner",
+    "category": "appliances-vacuum-cleaners",
+    "domain": "home_appliances"
+  },
+  {
+    "title": "Philips air fryer 4L",
+    "category": "appliances-kitchen",
+    "domain": "home_appliances"
+  },
+  {
+    "title": "Prestige induction cooktop 2000W",
+    "category": "appliances-kitchen",
+    "domain": "home_appliances"
+  },
+  {
+    "title": "Kent RO water purifier",
+    "category": "appliances-water-purifiers",
+    "domain": "home_appliances"
+  },
+  {
+    "title": "Aquaguard UV water purifier",
+    "category": "appliances-water-purifiers",
+    "domain": "home_appliances"
+  },
+  {
+    "title": "AO Smith 15L water heater",
+    "category": "appliances-water-heaters",
+    "domain": "home_appliances"
+  },
+  {
+    "title": "Havells 25L geyser",
+    "category": "appliances-water-heaters",
+    "domain": "home_appliances"
+  },
+  {
+    "title": "Philips AC1215 air purifier",
+    "category": "appliances-air-purifiers",
+    "domain": "home_appliances"
+  },
+  {
+    "title": "Coway Airmega air purifier",
+    "category": "appliances-air-purifiers",
+    "domain": "home_appliances"
+  },
+  {
+    "title": "Engineering Mathematics textbook",
+    "category": "books-textbooks",
+    "domain": "books_stationery"
+  },
+  {
+    "title": "NCERT Class 10 Science textbook",
+    "category": "books-textbooks",
+    "domain": "books_stationery"
+  },
+  {
+    "title": "Quantitative Aptitude RS Aggarwal",
+    "category": "books-exam-prep",
+    "domain": "books_stationery"
+  },
+  {
+    "title": "Arihant General Knowledge 2026",
+    "category": "books-exam-prep",
+    "domain": "books_stationery"
+  },
+  {
+    "title": "Atomic Habits paperback English",
+    "category": "books-fiction",
+    "domain": "books_stationery"
+  },
+  {
+    "title": "The Psychology of Money paperback",
+    "category": "books-fiction",
+    "domain": "books_stationery"
+  },
+  {
+    "title": "Python Crash Course paperback",
+    "category": "books-reference",
+    "domain": "books_stationery"
+  },
+  {
+    "title": "Clean Code Robert C Martin book",
+    "category": "books-reference",
+    "domain": "books_stationery"
+  },
+  {
+    "title": "Classmate 200 pages notebook pack of 6",
+    "category": "stationery-notebooks",
+    "domain": "books_stationery"
+  },
+  {
+    "title": "Moleskine A5 notebook",
+    "category": "stationery-notebooks",
+    "domain": "books_stationery"
+  },
+  {
+    "title": "Parker Jotter ball pen",
+    "category": "stationery-writing",
+    "domain": "books_stationery"
+  },
+  {
+    "title": "Pilot V5 roller pen",
+    "category": "stationery-writing",
+    "domain": "books_stationery"
+  },
+  {
+    "title": "Faber Castell colour pencil set",
+    "category": "stationery-art",
+    "domain": "books_stationery"
+  },
+  {
+    "title": "Camel acrylic paint set",
+    "category": "stationery-art",
+    "domain": "books_stationery"
+  },
+  {
+    "title": "Casio FX-991ES Plus calculator",
+    "category": "stationery-office",
+    "domain": "books_stationery"
+  },
+  {
+    "title": "Kangaro stapler HD 10",
+    "category": "stationery-office",
+    "domain": "books_stationery"
+  },
+  {
+    "title": "Decathlon 5kg dumbbell",
+    "category": "sports-gym-equipment",
+    "domain": "sports_fitness"
+  },
+  {
+    "title": "Kore adjustable dumbbells",
+    "category": "sports-gym-equipment",
+    "domain": "sports_fitness"
+  },
+  {
+    "title": "Asics Gel Nimbus 26 running shoes",
+    "category": "sports-footwear",
+    "domain": "sports_fitness"
+  },
+  {
+    "title": "Nike Pegasus 41 running shoes",
+    "category": "sports-footwear",
+    "domain": "sports_fitness"
+  },
+  {
+    "title": "Hero Sprint mountain bicycle",
+    "category": "sports-cycling",
+    "domain": "sports_fitness"
+  },
+  {
+    "title": "Btwin Riverside 120 bicycle",
+    "category": "sports-cycling",
+    "domain": "sports_fitness"
+  },
+  {
+    "title": "Decathlon yoga mat 6mm",
+    "category": "sports-yoga",
+    "domain": "sports_fitness"
+  },
+  {
+    "title": "Boldfit resistance bands",
+    "category": "sports-yoga",
+    "domain": "sports_fitness"
+  },
+  {
+    "title": "SG Kashmir willow cricket bat",
+    "category": "sports-cricket",
+    "domain": "sports_fitness"
+  },
+  {
+    "title": "SS cricket batting gloves",
+    "category": "sports-cricket",
+    "domain": "sports_fitness"
+  },
+  {
+    "title": "Yonex Astrox 99 badminton racket",
+    "category": "sports-badminton",
+    "domain": "sports_fitness"
+  },
+  {
+    "title": "Li Ning G Force badminton racket",
+    "category": "sports-badminton",
+    "domain": "sports_fitness"
+  },
+  {
+    "title": "Nivia Storm football size 5",
+    "category": "sports-football",
+    "domain": "sports_fitness"
+  },
+  {
+    "title": "Adidas football size 5",
+    "category": "sports-football",
+    "domain": "sports_fitness"
+  },
+  {
+    "title": "Decathlon boxing gloves 12oz",
+    "category": "sports-protection",
+    "domain": "sports_fitness"
+  },
+  {
+    "title": "Nivia knee guards",
+    "category": "sports-protection",
+    "domain": "sports_fitness"
+  },
+  {
+    "title": "Wakefit 3 seater fabric sofa",
+    "category": "home-sofas-seating",
+    "domain": "furniture_home"
+  },
+  {
+    "title": "Nilkamal plastic chair",
+    "category": "home-sofas-seating",
+    "domain": "furniture_home"
+  },
+  {
+    "title": "Godrej queen size bed frame",
+    "category": "home-beds",
+    "domain": "furniture_home"
+  },
+  {
+    "title": "Wakefit king size wooden bed",
+    "category": "home-beds",
+    "domain": "furniture_home"
+  },
+  {
+    "title": "Wakefit queen size memory foam mattress",
+    "category": "home-mattresses",
+    "domain": "furniture_home"
+  },
+  {
+    "title": "Sleepwell king size mattress",
+    "category": "home-mattresses",
+    "domain": "furniture_home"
+  },
+  {
+    "title": "IKEA 6 seater dining table",
+    "category": "home-dining",
+    "domain": "furniture_home"
+  },
+  {
+    "title": "Nilkamal folding dining chair",
+    "category": "home-dining",
+    "domain": "furniture_home"
+  },
+  {
+    "title": "Green Soul ergonomic office chair",
+    "category": "home-office-furniture",
+    "domain": "furniture_home"
+  },
+  {
+    "title": "IKEA study desk",
+    "category": "home-office-furniture",
+    "domain": "furniture_home"
+  },
+  {
+    "title": "Godrej 3 door wardrobe",
+    "category": "home-storage",
+    "domain": "furniture_home"
+  },
+  {
+    "title": "IKEA 4 drawer storage unit",
+    "category": "home-storage",
+    "domain": "furniture_home"
+  },
+  {
+    "title": "Philips LED ceiling light 24W",
+    "category": "home-lighting",
+    "domain": "furniture_home"
+  },
+  {
+    "title": "Wipro study table lamp",
+    "category": "home-lighting",
+    "domain": "furniture_home"
+  },
+  {
+    "title": "D Decor cotton bedsheet queen size",
+    "category": "home-decor",
+    "domain": "furniture_home"
+  },
+  {
+    "title": "IKEA cotton cushion covers",
+    "category": "home-decor",
+    "domain": "furniture_home"
+  }
+]

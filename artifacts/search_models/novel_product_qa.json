@@ -1,0 +1,297 @@
+{
+  "kind": "synthetic held-aside product matching tests",
+  "cases": 36,
+  "positive_passes": 36,
+  "negative_passes": 36,
+  "failures": [],
+  "all_cases": [
+    {
+      "domain": "electronics",
+      "query": "Logitech MX Master 3S Wireless Mouse",
+      "positive": "Logitech MX Master 3S Bluetooth Wireless Mouse",
+      "negative": "Logitech MX Master 2S Wireless Mouse",
+      "positive_accepted": true,
+      "negative_rejected": true
+    },
+    {
+      "domain": "electronics",
+      "query": "Canon EOS R50 Camera",
+      "positive": "Canon EOS R50 Mirrorless Camera",
+      "negative": "Canon EOS R10 Camera",
+      "positive_accepted": true,
+      "negative_rejected": true
+    },
+    {
+      "domain": "electronics",
+      "query": "JBL Tune 770NC Headphones",
+      "positive": "JBL Tune 770NC Bluetooth Headphones",
+      "negative": "JBL Tune 760NC Bluetooth Headphones",
+      "positive_accepted": true,
+      "negative_rejected": true
+    },
+    {
+      "domain": "electronics",
+      "query": "Acer Nitro V 15 RTX 4050",
+      "positive": "Acer Nitro V 15 laptop RTX 4050",
+      "negative": "Acer Nitro V 15 laptop RTX 3050",
+      "positive_accepted": true,
+      "negative_rejected": true
+    },
+    {
+      "domain": "electronics",
+      "query": "Samsung Galaxy Tab S9 FE 128GB",
+      "positive": "Samsung Galaxy Tab S9 FE Tablet 128GB",
+      "negative": "Samsung Galaxy Tab S9 FE Tablet 256GB",
+      "positive_accepted": true,
+      "negative_rejected": true
+    },
+    {
+      "domain": "electronics",
+      "query": "Apple Watch Series 9 45mm",
+      "positive": "Apple Watch Series 9 45mm GPS",
+      "negative": "Apple Watch Series 9 41mm GPS",
+      "positive_accepted": true,
+      "negative_rejected": true
+    },
+    {
+      "domain": "fashion",
+      "query": "Adidas Ultraboost 5 UK 9",
+      "positive": "Adidas Ultraboost 5 Running Shoes UK 9",
+      "negative": "Adidas Ultraboost 5 Running Shoes UK 8",
+      "positive_accepted": true,
+      "negative_rejected": true
+    },
+    {
+      "domain": "fashion",
+      "query": "Puma Smash V2 Sneakers UK 8",
+      "positive": "Puma Smash V2 Sneakers UK 8",
+      "negative": "Puma Smash V2 Sneakers UK 9",
+      "positive_accepted": true,
+      "negative_rejected": true
+    },
+    {
+      "domain": "fashion",
+      "query": "Levis 511 Slim Fit Jeans Size 32",
+      "positive": "Levis 511 Slim Fit Denim Jeans Size 32",
+      "negative": "Levis 511 Slim Fit Denim Jeans Size 34",
+      "positive_accepted": true,
+      "negative_rejected": true
+    },
+    {
+      "domain": "fashion",
+      "query": "Fastrack Analog Wrist Watch",
+      "positive": "Fastrack Analog Wrist Watch",
+      "negative": "Fastrack Digital Wrist Watch",
+      "positive_accepted": true,
+      "negative_rejected": true
+    },
+    {
+      "domain": "fashion",
+      "query": "Ray Ban Polarized Sunglasses",
+      "positive": "Ray Ban Polarized Sunglasses",
+      "negative": "Ray Ban Optical Frame Eyeglasses",
+      "positive_accepted": true,
+      "negative_rejected": true
+    },
+    {
+      "domain": "fashion",
+      "query": "Allen Solly Cotton Shirt Size L",
+      "positive": "Allen Solly Cotton Shirt Size L",
+      "negative": "Allen Solly Cotton Shirt Size M",
+      "positive_accepted": true,
+      "negative_rejected": true
+    },
+    {
+      "domain": "home_appliances",
+      "query": "Voltas 1.5 Ton Inverter AC",
+      "positive": "Voltas 1.5 Ton Inverter Air Conditioner",
+      "negative": "Voltas 2 Ton Inverter Air Conditioner",
+      "positive_accepted": true,
+      "negative_rejected": true
+    },
+    {
+      "domain": "home_appliances",
+      "query": "Bosch 8kg Front Load Washing Machine",
+      "positive": "Bosch 8kg Front Load Washing Machine",
+      "negative": "Bosch 9kg Front Load Washing Machine",
+      "positive_accepted": true,
+      "negative_rejected": true
+    },
+    {
+      "domain": "home_appliances",
+      "query": "Whirlpool 265L Double Door Refrigerator",
+      "positive": "Whirlpool 265L Double Door Refrigerator",
+      "negative": "Whirlpool 300L Double Door Refrigerator",
+      "positive_accepted": true,
+      "negative_rejected": true
+    },
+    {
+      "domain": "home_appliances",
+      "query": "Philips 4L Air Fryer",
+      "positive": "Philips 4L Air Fryer",
+      "negative": "Philips 6L Air Fryer",
+      "positive_accepted": true,
+      "negative_rejected": true
+    },
+    {
+      "domain": "home_appliances",
+      "query": "IFB 30L Convection Microwave",
+      "positive": "IFB 30L Convection Microwave",
+      "negative": "IFB 23L Convection Microwave",
+      "positive_accepted": true,
+      "negative_rejected": true
+    },
+    {
+      "domain": "home_appliances",
+      "query": "LG 5 Star 1.5 Ton Inverter AC",
+      "positive": "LG 5 Star 1.5 Ton Inverter AC",
+      "negative": "LG 3 Star 1.5 Ton Inverter AC",
+      "positive_accepted": true,
+      "negative_rejected": true
+    },
+    {
+      "domain": "books_stationery",
+      "query": "Deep Work Paperback English",
+      "positive": "Deep Work English Paperback Book",
+      "negative": "Deep Work English Hardcover Book",
+      "positive_accepted": true,
+      "negative_rejected": true
+    },
+    {
+      "domain": "books_stationery",
+      "query": "Ikigai Hindi Paperback",
+      "positive": "Ikigai Hindi Paperback Book",
+      "negative": "Ikigai English Paperback Book",
+      "positive_accepted": true,
+      "negative_rejected": true
+    },
+    {
+      "domain": "books_stationery",
+      "query": "Classmate 200 Pages Notebook Pack of 6",
+      "positive": "Classmate 200 Pages Notebook Pack of 6",
+      "negative": "Classmate 200 Pages Notebook Pack of 4",
+      "positive_accepted": true,
+      "negative_rejected": true
+    },
+    {
+      "domain": "books_stationery",
+      "query": "Oxford English Dictionary 3rd Edition",
+      "positive": "Oxford English Dictionary 3rd Edition",
+      "negative": "Oxford English Dictionary 2nd Edition",
+      "positive_accepted": true,
+      "negative_rejected": true
+    },
+    {
+      "domain": "books_stationery",
+      "query": "Cello Gel Pen Pack of 10",
+      "positive": "Cello Gel Pen Pack of 10",
+      "negative": "Cello Gel Pen Pack of 5",
+      "positive_accepted": true,
+      "negative_rejected": true
+    },
+    {
+      "domain": "books_stationery",
+      "query": "Camlin Scientific Calculator",
+      "positive": "Camlin Scientific Calculator",
+      "negative": "Camlin Basic Calculator",
+      "positive_accepted": true,
+      "negative_rejected": true
+    },
+    {
+      "domain": "sports_fitness",
+      "query": "Yonex Astrox 77 Pro Badminton Racket",
+      "positive": "Yonex Astrox 77 Pro Badminton Racket",
+      "negative": "Yonex Astrox 99 Pro Badminton Racket",
+      "positive_accepted": true,
+      "negative_rejected": true
+    },
+    {
+      "domain": "sports_fitness",
+      "query": "Nivia Storm Football Size 5",
+      "positive": "Nivia Storm Football Size 5",
+      "negative": "Nivia Storm Football Size 4",
+      "positive_accepted": true,
+      "negative_rejected": true
+    },
+    {
+      "domain": "sports_fitness",
+      "query": "Domyos 5kg Dumbbell",
+      "positive": "Domyos 5kg Cast Iron Dumbbell",
+      "negative": "Domyos 10kg Cast Iron Dumbbell",
+      "positive_accepted": true,
+      "negative_rejected": true
+    },
+    {
+      "domain": "sports_fitness",
+      "query": "Cosco Tennis Balls Pack of 3",
+      "positive": "Cosco Tennis Balls Pack of 3",
+      "negative": "Cosco Tennis Balls Pack of 6",
+      "positive_accepted": true,
+      "negative_rejected": true
+    },
+    {
+      "domain": "sports_fitness",
+      "query": "Adidas Football Shoes UK 9",
+      "positive": "Adidas Football Shoes UK 9",
+      "negative": "Adidas Football Shoes UK 8",
+      "positive_accepted": true,
+      "negative_rejected": true
+    },
+    {
+      "domain": "sports_fitness",
+      "query": "Wilson Pro Staff 97 315g Racket",
+      "positive": "Wilson Pro Staff 97 315g Tennis Racket",
+      "negative": "Wilson Pro Staff 97 300g Tennis Racket",
+      "positive_accepted": true,
+      "negative_rejected": true
+    },
+    {
+      "domain": "furniture_home",
+      "query": "Wakefit Queen Memory Foam Mattress 78x60 inches",
+      "positive": "Wakefit Queen Memory Foam Mattress 78x60 inches",
+      "negative": "Wakefit King Memory Foam Mattress 78x72 inches",
+      "positive_accepted": true,
+      "negative_rejected": true
+    },
+    {
+      "domain": "furniture_home",
+      "query": "Nilkamal 4 Seater Dining Table",
+      "positive": "Nilkamal 4 Seater Dining Table",
+      "negative": "Nilkamal 6 Seater Dining Table",
+      "positive_accepted": true,
+      "negative_rejected": true
+    },
+    {
+      "domain": "furniture_home",
+      "query": "Godrej 3 Door Wardrobe",
+      "positive": "Godrej 3 Door Wardrobe",
+      "negative": "Godrej 2 Door Wardrobe",
+      "positive_accepted": true,
+      "negative_rejected": true
+    },
+    {
+      "domain": "furniture_home",
+      "query": "IKEA LACK Side Table",
+      "positive": "IKEA LACK Side Table",
+      "negative": "IKEA MICKE Computer Desk",
+      "positive_accepted": true,
+      "negative_rejected": true
+    },
+    {
+      "domain": "furniture_home",
+      "query": "Durian Leather Sofa 3 Seater",
+      "positive": "Durian Leather Sofa 3 Seater",
+      "negative": "Durian Leather Sofa 2 Seater",
+      "positive_accepted": true,
+      "negative_rejected": true
+    },
+    {
+      "domain": "furniture_home",
+      "query": "Philips 9W LED Ceiling Light",
+      "positive": "Philips 9W LED Ceiling Light",
+      "negative": "Philips 12W LED Ceiling Light",
+      "positive_accepted": true,
+      "negative_rejected": true
+    }
+  ]
+}
