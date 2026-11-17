@@ -1,0 +1,35 @@
+# Cost Quest: single-instance Flask deployment with persistent SQLite.
+# A paid Render web service and persistent disk are required for this config.
+services:
+  - type: web
+    name: cost-quest
+    runtime: python
+    plan: starter
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn --workers 1 --threads 4 --timeout 120 --bind 0.0.0.0:$PORT app:app
+    healthCheckPath: /health
+    disk:
+      name: cost-quest-data
+      mountPath: /var/data
+      sizeGB: 1
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.12.8
+      - key: ENVIRONMENT
+        value: production
+      - key: SECRET_KEY
+        generateValue: true
+      - key: DATABASE_PATH
+        value: /var/data/costquest.sqlite3
+      - key: FLASK_DEBUG
+        value: '0'
+      - key: CSRF_ENABLED
+        value: '1'
+      - key: AI_SEMANTIC_ENABLED
+        value: '0'
+      - key: AI_CROSS_ENCODER_ENABLED
+        value: '0'
+      - key: AI_SIAMESE_ENABLED
+        value: '0'
+      - key: AI_CLIP_ENABLED
+        value: '0'
