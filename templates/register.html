@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% block title %}Create account — Cost Quest{% endblock %}
+{% block content %}
+<section class="auth-wrap">
+  <div class="auth-card">
+    <div class="eyebrow dark">SAVE YOUR SHORTLIST</div>
+    <h1>Create your <em>account</em></h1>
+    <p class="auth-intro">Create an account to keep your watchlist across sessions. You can browse and compare without logging in.</p>
+    <form method="post" class="auth-form">
+      <input type="hidden" name="csrf_token" value="{{ csrf_token }}">
+      <input type="hidden" name="next" value="{{ next_url }}">
+      <label for="email">Email address</label>
+      <input id="email" name="email" type="email" autocomplete="email" maxlength="254" required placeholder="you@example.com">
+      <label for="password">Password</label>
+      <input id="password" name="password" type="password" autocomplete="new-password" minlength="12" maxlength="128" required placeholder="At least 12 characters">
+      <label for="confirm_password">Confirm password</label>
+      <input id="confirm_password" name="confirm_password" type="password" autocomplete="new-password" minlength="12" maxlength="128" required placeholder="Enter the password again">
+      <label class="privacy-toggle"><input type="checkbox" name="personalize" value="yes"><span>Save my searches to improve personalized suggestions (optional)</span></label>
+      <button type="submit">Create account <span>→</span></button>
+    </form>
+    <p class="auth-note">Your password is stored as a salted password hash. This version does not include email verification or password reset.</p>
+    <p class="auth-switch">Already registered? <a href="{{ url_for('login', next=next_url) }}">Log in</a>.</p>
+  </div>
+</section>
+{% endblock %}

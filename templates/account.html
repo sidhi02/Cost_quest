@@ -1,0 +1,16 @@
+{% extends 'base.html' %}{% block title %}My account — Cost Quest{% endblock %}
+{% block content %}
+<section class="account-panel shop-section">
+  <div class="eyebrow dark">YOUR ACCOUNT</div><h1>Your shopping preferences</h1><p>You can always browse and compare as a guest. These account features are optional.</p>
+  <div class="account-grid">
+    <div class="account-card"><h2>Private search history</h2><p>Only save searches when you choose. We use them to suggest relevant product searches; they are never used as evidence of retailer availability.</p>
+      <form action="{{ url_for('account_preferences') }}" method="post"><input type="hidden" name="csrf_token" value="{{ csrf_token }}"><label class="privacy-toggle"><input type="checkbox" name="history_enabled" value="yes" {% if current_user.history_enabled %}checked{% endif %}><span>Remember searches for personalized suggestions</span></label><button class="account-primary" type="submit">Save preference</button></form>
+      {% if current_user.history_enabled %}<p class="privacy-caption">Disabling this setting deletes all stored search history.</p>{% else %}<p class="privacy-caption">Off by default — guest searches aren't saved to an account.</p>{% endif %}
+    </div>
+    <div class="account-card"><h2>Your data, your choice</h2><p>Download or delete your account data. Your saved products are in your watchlist.</p><div class="account-actions"><a href="{{ url_for('account_export') }}">Download my data ↓</a><a href="{{ url_for('watchlist') }}">Open watchlist →</a>{% if is_admin %}<a href="{{ url_for('admin') }}">Admin diagnostics →</a>{% endif %}</div>
+    <form action="{{ url_for('account_delete') }}" method="post" class="account-delete"><input type="hidden" name="csrf_token" value="{{ csrf_token }}"><label for="account-confirm">To permanently delete your account, type DELETE</label><input name="confirmation" id="account-confirm" placeholder="DELETE" autocomplete="off"><button type="submit">Delete account</button></form></div>
+  </div>
+  {% if current_user.history_enabled %}<div class="account-card account-history"><div class="shop-section-header"><div><h2>Recent saved searches</h2><p>Only your account can access this history.</p></div>{% if history %}<form method="post" action="{{ url_for('account_clear_history') }}"><input type="hidden" name="csrf_token" value="{{ csrf_token }}"><button type="submit" class="account-quiet">Clear history</button></form>{% endif %}</div>
+  {% if history %}<div class="account-searches">{% for row in history %}<a href="{{ url_for('compare', q=row.query) }}"><span>⌕ {{ row.query }}</span><small>{{ row.searched_at }} UTC</small></a>{% endfor %}</div>{% else %}<p>No saved searches yet. Try searching for a product.</p>{% endif %}</div>{% endif %}
+  {% if personal_suggestions %}<section class="shop-personal"><h2>Because of your searches</h2><div class="shop-ideas">{% for idea in personal_suggestions %}<a class="shop-idea" href="{{ url_for('compare', q=idea.title) }}"><span>✦</span><span><b>{{ idea.title }}</b><small>{{ idea.category_name }} · suggested search</small></span><span>↗</span></a>{% endfor %}</div></section>{% endif %}
+</section>{% endblock %}

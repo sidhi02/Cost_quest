@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+{% block title %}Cost Quest — Find the right product at the right price{% endblock %}
+{% block content %}
+<section class="shop-hero">
+  <div class="shop-hero-copy">
+    <div class="eyebrow dark"><span class="pulse"></span> SHOP SMARTER WITH COST QUEST</div>
+    <h1>Find your perfect pick.<br><em>Compare with confidence.</em></h1>
+    <p>From phones and fashion to home essentials, search across connected shopping sources. We check product details so you can compare the right items.</p>
+    <form class="searchbar shop-search" action="{{ url_for('compare') }}" method="get" role="search" data-autocomplete="true">
+      <span class="search-icon" aria-hidden="true">⌕</span>
+      <div class="search-input-wrap"><input name="q" type="search" autocomplete="off" placeholder="Search a product, brand or model..." aria-label="Search products" required maxlength="160"><button type="button" class="search-clear" aria-label="Clear search" title="Clear search">×</button></div>
+      <button type="submit" class="search-submit">Compare <span aria-hidden="true">→</span></button>
+    </form>
+    <p class="search-hint">Try “Sony WH-1000XM5”, “Nike Air Force 1” or “Wakefit queen mattress”. <strong>No account required.</strong></p>
+    <div class="shop-hero-points"><span>✓ Free product search</span><span>✓ Variant-aware matching</span><span>✓ Verified prices first</span></div>
+  </div>
+  <div class="shop-hero-visual" aria-hidden="true">
+    <div class="shop-art-glow"></div>
+    <div class="shop-feature-card"><span>PRODUCT DISCOVERY</span><div class="shop-feature-icon">⌕</div><strong>One search.<br>Smarter choices.</strong><small>Compare models, variants & stores</small><div class="shop-mini-bars"><i></i><i></i><i></i></div></div>
+    <div class="shop-float shop-float-top">✦ &nbsp; Match the right model</div><div class="shop-float shop-float-bottom">↘ &nbsp; Lowest verified price first</div>
+  </div>
+</section>
+<section class="shop-benefits" aria-label="How Cost Quest works"><div><strong>01</strong><span>Search any category</span></div><div><strong>02</strong><span>Verify specifications</span></div><div><strong>03</strong><span>Compare real offers</span></div><div><strong>04</strong><span>Save for later (optional)</span></div></section>
+<section class="shop-section" id="categories">
+  <div class="shop-section-header"><div><div class="eyebrow dark">EXPLORE EVERY CATEGORY</div><h2>What are you shopping for?</h2><p>Browse all six domains. Choose a search idea to check available retailer offers.</p></div><span class="shop-section-counter">6 domains · 61 categories</span></div>
+  <div class="shop-domains">
+    {% for d in domains %}
+    <article class="shop-domain-card domain-{{ d.slug }}">
+      <div class="domain-tile-art" aria-hidden="true"><span>{{ d.icon }}</span></div>
+      <div class="domain-tile-body"><h3>{{ d.name }}</h3><p>{{ d.categories|length }} categories to explore</p>
+      <div class="domain-examples">{% for idea in domain_samples.get(d.slug, [])[:2] %}<a href="{{ url_for('compare', q=idea.title) }}" title="Search {{ idea.title }}">{{ idea.title }} <span aria-hidden="true">↗</span></a>{% endfor %}</div>
+      </div>
+    </article>
+    {% endfor %}
+  </div>
+</section>
+{% if personal_suggestions %}
+<section class="shop-section" aria-label="Personalized recommendations"><div class="shop-section-header"><div><div class="eyebrow dark">BASED ON YOUR SAVED SEARCHES</div><h2>Ideas you might like</h2><p>Suggestions are based on your opted-in search history, not live inventory.</p></div><a class="shop-text-link" href="{{ url_for('account') }}">Manage personalization →</a></div>
+  <div class="shop-ideas">{% for idea in personal_suggestions %}<a class="shop-idea" href="{{ url_for('compare', q=idea.title) }}"><span class="shop-idea-icon">{{ domains|selectattr('slug', 'equalto', idea.domain)|map(attribute='icon')|first|default('🛍️') }}</span><span><b>{{ idea.title }}</b><small>{{ idea.category_name }}</small></span><span class="shop-arrow">↗</span></a>{% endfor %}</div>
+</section>
+{% endif %}
+<section class="shop-section shop-highlight"><div><div class="eyebrow dark">BUILT FOR REAL SHOPPING DECISIONS</div><h2>Know what you're comparing.</h2><p>Different stores may name the same item differently. Cost Quest uses language matching and specification checks to help distinguish genuine offers from uncertain matches.</p><a class="shop-text-link" href="#categories">Discover products →</a></div><div class="shop-feature-list"><div><span>◎</span><div><b>Model-aware search</b><small>Matches retailer title variations without confusing different configurations.</small></div></div><div><span>₹</span><div><b>Transparent prices</b><small>Cheapest verified listed offer comes first. Shipping and checkout discounts may differ.</small></div></div><div><span>♡</span><div><b>Optional saved history</b><small>Search as a guest, or sign in to save products and opt into recommendations.</small></div></div></div></section>
+<section class="shop-section shop-connectivity" id="stores"><div class="shop-section-header"><div><div class="eyebrow dark">DATA TRANSPARENCY</div><h2>Connected shopping sources</h2><p>Provider availability depends on configured integrations. Retailers shown in aggregator results are not necessarily direct connections.</p></div></div><details class="shop-provider-details"><summary>View current data-source status</summary><div class="shop-provider-grid">{% for p in providers %}<div><strong>{{ p.name }}{% if p.role == 'Marketplace aggregator' %} · Aggregator{% endif %}</strong><small>{{ 'Configured (coverage not guaranteed)' if p.configured else 'Not connected' }}</small></div>{% endfor %}</div></details></section>
+{% endblock %}

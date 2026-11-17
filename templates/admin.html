@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block title %}Admin diagnostics — Cost Quest{% endblock %}
+{% block content %}
+<section class="shop-section admin-panel" aria-labelledby="admin-heading">
+  <div class="eyebrow dark">PROTECTED ENGINEERING VIEW</div>
+  <h1 id="admin-heading">Cost Quest diagnostics</h1>
+  <p>Read-only configuration and offline evaluation. Retailer adapters marked "configured" are not proof of live product availability. This page is accessible only to an explicitly permitted admin account.</p>
+  <div class="admin-metrics">
+    <div><strong>{{ provider_status|length }}</strong><span>Provider adapters</span></div>
+    <div><strong>{{ provider_status|selectattr('configured')|list|length }}</strong><span>Configured locally</span></div>
+    <div><strong>{{ qa_reports|selectattr('available')|list|length }}</strong><span>Local QA artifacts</span></div>
+  </div>
+  <section class="account-card"><h2>Retailer connectivity configuration</h2><div class="admin-providers">
+    {% for provider in provider_status %}
+      <div><strong>{{ provider.name }}</strong><span>{{ provider.role }}</span><span class="admin-state {{ 'on' if provider.configured else 'off' }}">{{ 'Configured · live not verified' if provider.configured else 'Not connected' }}</span><small>{{ provider.message }}</small></div>
+    {% endfor %}
+  </div></section>
+  <section class="account-card"><h2>Matching and ML evaluation</h2>
+    <p>These local numbers come from synthetic fixtures or a small training set, not an independent retailer accuracy audit.</p>
+    <div class="admin-reports">{% for report in qa_reports %}
+      <article><h3>{{ report.label }}</h3>
+      {% if report.available %}
+        {% if report.data.classification is defined %}<p>Fixture precision: {{ report.data.classification.precision }} · Recall: {{ report.data.classification.recall }} · Cases: {{ report.data.fixtures }}</p>{% elif report.data.cases is defined %}<p>New cases: {{ report.data.cases }} · Positive accepted: {{ report.data.positive_passes }} · Incorrect variants rejected: {{ report.data.negative_passes }}</p>{% elif report.data.accuracy is defined %}<p>Held-out classifier accuracy: {{ '%.1f'|format(report.data.accuracy * 100) }}% · Not deployed for matching</p>{% else %}<p>QA data available.</p>{% endif %}
+      {% else %}<p>Report not generated in this environment.</p>{% endif %}</article>
+    {% endfor %}</div>
+  </section>
+</section>
+{% endblock %}

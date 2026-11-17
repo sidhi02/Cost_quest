@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% block title %}Compare {{ query }} — Cost Quest{% endblock %}
+{% block content %}
+<section class="results-head cq-results-header">
+  <div class="eyebrow dark">SMART PRODUCT COMPARISON</div>
+  <h1>Compare <em>{{ query }}</em></h1>
+  <p class="cq-lead">Verified product matches first. Transparent prices, without the clutter.</p>
+  <form class="searchbar compact" action="{{ url_for('compare') }}" method="get" role="search" data-autocomplete="true"><span class="search-icon" aria-hidden="true">⌕</span><div class="search-input-wrap"><input name="q" type="search" value="{{ query }}" autocomplete="off" required maxlength="160" aria-label="Search another product" placeholder="Search a product or model"><button class="search-clear" type="button" title="Clear search" aria-label="Clear search">×</button></div><button type="submit">Search →</button></form>
+</section>
+{% if products %}
+<section class="cq-summary" aria-label="Comparison summary">
+  <div><span class="cq-summary-label">Lowest verified listed price</span><strong>₹{{ '{:,.0f}'.format(best_price) }}</strong><small>Before delivery and conditional discounts</small></div>
+  <div><span class="cq-summary-label">Verified offers</span><strong>{{ products|length }}</strong><small>Grouped by retailer and configuration</small></div>
+  <div><span class="cq-summary-label">Your search</span><b>{{ query }}</b><small>{{ category_name }}</small></div>
+</section>
+<section class="cq-controls" aria-label="Offer controls"><div><h2>Compare retailer offers</h2><p>Only confirmed matching offers compete for the best price.</p><small id="cq-filter-count" aria-live="polite">{{ products|length }} verified offers</small></div><div class="cq-filter-bar"><label for="cq-store-filter">Retailer <select id="cq-store-filter"><option value="all">All retailers</option>{% for retailer in products|map(attribute='retailer')|unique|sort %}<option value="{{ retailer|lower }}">{{ retailer }}</option>{% endfor %}</select></label><label for="cq-sort">Sort offers <select id="cq-sort"><option value="low">Price: low to high</option><option value="high">Price: high to low</option><option value="retailer">Retailer A–Z</option></select></label></div></section>
+<section class="cq-offers" id="cq-offers" aria-label="Verified retailer offers">
+{% for p in products %}
+<article class="cq-offer {% if p.featured_best %}cq-best{% endif %}" data-price="{{ p.price }}" data-retailer="{{ p.retailer|lower }}">
+  <div class="cq-offer-image">{% if p.image %}<img src="{{ p.image }}" alt="{{ p.name }}" loading="lazy" referrerpolicy="no-referrer">{% else %}<span aria-hidden="true">🛍️</span>{% endif %}</div>
+  <div class="cq-offer-main"><div class="cq-retailer">{{ p.retailer }} {% if p.featured_best %}<span class="cq-best-label">★ Best verified price</span>{% endif %}</div><h3>{{ p.name }}</h3><div class="cq-meta">{{ p.availability }} · {% if p.match_confidence == 'high' %}Model identity and requested specifications matched{% else %}Relevant listing; supplied attributes checked{% endif %}{% if p.source_updated_at %} · Source updated {{ p.source_updated_at }}{% endif %}</div>
+  {% if p.colour_options %}<div class="cq-colours"><span>Colours at this price:</span> {{ p.colour_options|join(' · ') }}</div>{% endif %}
+  {% if p.variant_links|length > 1 %}<details class="cq-variants"><summary>Choose colour ({{ p.variant_links|length }})</summary><div>{% for variant in p.variant_links %}<a href="{{ variant.url }}" target="_blank" rel="noopener noreferrer">{{ variant.colour }} ↗</a>{% endfor %}</div></details>{% endif %}
+  <div class="cq-links"><a href="{{ p.url }}" target="_blank" rel="noopener noreferrer">View at {{ p.retailer }} ↗</a><a href="/history/{{ p.product_key }}">Price history</a></div></div>
+  <div class="cq-offer-side"><strong>₹{{ '{:,.0f}'.format(p.price) }}</strong>{% if p.featured_best %}<small class="cq-green">Lowest verified returned price</small>{% else %}<small>₹{{ '{:,.0f}'.format(p.price - best_price) }} above lowest</small>{% endif %}
+  <form method="post" action="/watchlist/add"><input type="hidden" name="csrf_token" value="{{ csrf_token }}"><input type="hidden" name="product_key" value="{{ p.product_key }}"><input type="hidden" name="name" value="{{ p.name }}"><input type="hidden" name="retailer" value="{{ p.retailer }}"><input type="hidden" name="url" value="{{ p.url }}"><button class="save-btn" type="submit">＋ Watch</button></form></div>
+</article>
+{% endfor %}
+</section>
+<p id="cq-filter-empty" class="cq-filter-empty" hidden>No offers match this retailer filter. Choose “All retailers” to see every result.</p>
+{% else %}
+<section class="cq-empty" role="status"><div aria-hidden="true">⌕</div><h2>No verified offers found</h2><p>{% if review_offers %}We found possible offers, but none confirmed every requested specification. Review them below before visiting a retailer.{% else %}Connected sources could not supply a confirmed matching offer. This does not mean the product is unavailable elsewhere.{% endif %}</p><a href="/">Try another search →</a></section>
+{% endif %}
+{% if review_offers %}<section class="cq-review"><details><summary>{{ review_offers|length }} possible offers need specification verification</summary><p>These listings are not eligible for the lowest-price recommendation.</p>{% for p in review_offers %}<div class="cq-review-item"><span><b>{{ p.name }}</b> · {{ p.retailer }}{% if p.unverified_attributes %} · Missing: {{ p.unverified_attributes|join(', ') }}{% endif %}</span><span>₹{{ '{:,.0f}'.format(p.price) }}</span></div>{% endfor %}</details></section>{% endif %}
+{% if similar_suggestions %}
+<section class="cq-similar shop-section" aria-label="Similar product searches"><div class="shop-section-header"><div><div class="eyebrow dark">YOU MIGHT ALSO LIKE</div><h2>Explore similar products</h2><p>Content-based search ideas in this category, not confirmed retailer listings or live prices.</p></div></div>
+  <div class="shop-ideas">{% for idea in similar_suggestions %}<a class="shop-idea" href="{{ url_for('compare', q=idea.title) }}"><span class="shop-idea-icon">✦</span><span><b>{{ idea.title }}</b><small>{{ idea.category_name }} · search idea</small></span><span class="shop-arrow">↗</span></a>{% endfor %}</div>
+</section>{% endif %}
+<p class="disclaimer cq-disclaimer">Prices are observations from connected providers, not guaranteed checkout totals. Shipping, coupons, bank offers and location-specific charges may differ. Retailer names shown on aggregator offers do not imply direct API connectivity. Confirm specifications and final payable price with the retailer.</p>
+{% endblock %}
+{% block scripts %}<script src="{{ url_for('static', filename='js/comparison.js') }}" defer></script>{% endblock %}

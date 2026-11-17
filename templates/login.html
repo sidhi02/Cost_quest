@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block title %}Log in — Cost Quest{% endblock %}
+{% block content %}
+<section class="auth-wrap">
+  <div class="auth-card">
+    <div class="eyebrow dark">WELCOME BACK</div>
+    <h1>Log in to <em>Cost Quest</em></h1>
+    <p class="auth-intro">Access your saved products and personal watchlist.</p>
+    <form method="post" class="auth-form">
+      <input type="hidden" name="csrf_token" value="{{ csrf_token }}">
+      <input type="hidden" name="next" value="{{ next_url }}">
+      <label for="email">Email address</label>
+      <input id="email" name="email" type="email" autocomplete="email" maxlength="254" required placeholder="you@example.com">
+      <label for="password">Password</label>
+      <input id="password" name="password" type="password" autocomplete="current-password" maxlength="128" required placeholder="Enter your password">
+      <button type="submit">Log in <span>→</span></button>
+    </form>
+    <p class="auth-switch">Don't have an account? <a href="{{ url_for('register', next=next_url) }}">Create one</a>.</p>
+  </div>
+</section>
+{% endblock %}
